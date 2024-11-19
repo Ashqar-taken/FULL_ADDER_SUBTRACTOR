@@ -38,18 +38,75 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
-**Procedure**
+**FULL ADDER**
+![Truth table](https://github.com/user-attachments/assets/abd68121-225a-4a3c-befc-fd482d4b1fa6)
 
-Write the detailed procedure here
+**FULL SUBRACTOR**
+![full-subtractor-truth-table](https://github.com/user-attachments/assets/de3e8600-733b-4c14-9857-23d3f4eedb08)
+
+**Procedure**
+1. Type the program in quartus software.
+2. Compile and run the porgram.
+3. Generate the RTL schematic and save the logic diagram.
+4. Create nodes for the input and ouput to generate the timing diagram.
+5. For different input ocmbination generate the timing diagram.
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+Full Adder:
+```
+//FULL ADDER
+module Exp4(sum,cout,a,b,cin);
+output sum;
+output cout;
+input a;
+input b;
+input cin;
+wire s1,c1,c2;
+xor (s1,a,b);
+and (c1,a,b);
+xor (sum,s1,cin);
+and (c2,s1,cin);
+or (cout,c2,c1);
+
+endmodule
+```
+Full Subractor:
+```
+//FULL SUBRACTOR
+module Exp4_2(df,bo,a,b,bin);
+output df;
+output bo;
+input a;
+input b;
+input bin;
+wire w1,w2,w3;
+assign w1=a^b;
+assign w2=(~a&b);
+assign w3=(~w1&bin);
+assign df=w1^bin;
+assign bo=w2|w3;
+endmodule
+```
+Designer name: Ashqar Ahamed S T
+
+Register number: 24004759
 
 **RTL Schematic**
 
+**FULL ADDER**
+![Exp4](https://github.com/user-attachments/assets/dc6f482a-35ee-49b2-9d4d-e58d894daec0)
+
+**FULL SUBRACTOR**
+![Exp4_2](https://github.com/user-attachments/assets/4279f93a-a9f5-435b-a285-f7ab893780af)
+
 **Output Timing Waveform**
+**FUll ADDER**
+![waveform1](https://github.com/user-attachments/assets/092b5f64-b6b2-4348-a973-e154433152be)
+
+**FULL SUBRACTOR**
+![Waveform1](https://github.com/user-attachments/assets/2dd04ad9-5c3a-4528-8771-5e3594647316)
+
 
 **Result:**
 
