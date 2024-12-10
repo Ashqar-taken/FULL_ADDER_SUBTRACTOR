@@ -102,10 +102,12 @@ Register number: 24004759
 
 **Output Timing Waveform**
 **FUll ADDER**
-![waveform1](https://github.com/user-attachments/assets/092b5f64-b6b2-4348-a973-e154433152be)
+![Ex4(2)](https://github.com/user-attachments/assets/a861dab1-1126-4a26-b313-af1f5ae01150)
+
 
 **FULL SUBRACTOR**
-![Waveform1](https://github.com/user-attachments/assets/2dd04ad9-5c3a-4528-8771-5e3594647316)
+![Exp4_2(2)](https://github.com/user-attachments/assets/47e7fa24-62e1-4c95-86f5-1859a5f511dd)
+
 
 
 **Result:**
